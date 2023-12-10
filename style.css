@@ -44,3 +44,11 @@
     border-radius: 15px;
     box-shadow: 5px 4px 10px #222222;
 }
+
+
+.container .form-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

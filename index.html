@@ -9,30 +9,35 @@
   </head>
   <body>
     <div class="container">
-        <div class="heading">
-            <h1>JavaScript Password Generator</h1>
-        </div>
+      <div class="heading">
+        <h1>JavaScript Password Generator</h1>
+      </div>
       <div class="form-content">
         <form name="generator">
-          <input type="checkbox" name="uppercase" checked="checked" />
-          <label for="uppercase">Uppercase</label><br />
+          <div class="checkboxs">
+            <input type="checkbox" name="uppercase" checked="checked" />
+            <label for="uppercase">Uppercase</label><br />
 
-          <input type="checkbox" name="lowercase" checked="checked" />
-          <label for="lowercase">Lowercase</label><br />
+            <input type="checkbox" name="lowercase" checked="checked" />
+            <label for="lowercase">Lowercase</label><br />
 
-          <input type="checkbox" name="numbers" />
-          <label for="numbers">Numbers</label><br />
+            <input type="checkbox" name="numbers" />
+            <label for="numbers">Numbers</label><br />
 
-          <input type="checkbox" name="symbols" />
-          <label for="symbols">Symbols</label><br /><br />
-
-          Password Length :
-          <input type="text" name="length" value="10" /><br /><br />
-          No. of Password : <input type="text" name="count" value="10" /><br />
-
-          <button type="button" onclick="getPasswords();">Generate</button>
-          <button type="reset">Reset</button>
-          <button type="button">Clear Data</button>
+            <input type="checkbox" name="symbols" />
+            <label for="symbols">Symbols</label>
+          </div>
+          <div class="inputs">
+            <label for="length">Password Length:</label>
+            <input type="number" name="length" value="10" />
+            <label for="length">No. of Password:</label>
+            <input type="number" name="count" value="10" />
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="getPasswords();">Generate</button>
+            <button type="reset">Reset</button>
+            <button type="button">Clear Data</button>
+          </div>
         </form>
       </div>
 
