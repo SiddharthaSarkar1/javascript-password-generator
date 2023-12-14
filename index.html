@@ -31,16 +31,17 @@
             <label for="length">Password Length:</label>
             <input type="number" name="length" value="10" />
             <label for="length">No. of Password:</label>
-            <input type="number" name="count" value="10" />
+            <input type="number" name="count" value="5" />
           </div>
           <div class="buttons">
             <button type="button" onclick="getPasswords();">Generate</button>
             <button type="reset">Reset</button>
-            <button type="button">Clear Data</button>
+            <button type="button" onclick="handleClearData()">
+              Clear Data
+            </button>
           </div>
         </form>
       </div>
-
       <div class="result-section">
         <ul id="passwords"></ul>
       </div>

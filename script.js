@@ -4,6 +4,7 @@ var numbers = "1234567890";
 var symbols = "@#$%^&*()!";
 
 function getPasswords() {
+  document.querySelector(".result-section").style.visibility = "visible";
   var ul = document.getElementById("passwords");
   ul.innerHTML = "";
   var count = document.generator.count.value;
@@ -37,4 +38,11 @@ function generatePassword() {
   }
 
   return password;
+}
+
+
+const handleClearData = () => {
+  let ul = document.getElementById("passwords");
+  ul.innerHTML = "";
+  document.querySelector(".result-section").style.visibility = "hidden";
 }
